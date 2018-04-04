@@ -1,0 +1,12 @@
+{
+  "name": "react-renderhare",
+  "version": "1.0.0",
+  "description": "React integration with RenderHare",
+  "main": "index.js",
+  "repository": "https://github.com/thekidfrankensteinthrewinapond/react-renderhare",
+  "author": "RenderHare",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.3.0"
+  }
+}
