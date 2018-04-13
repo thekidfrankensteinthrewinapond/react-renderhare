@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageCacheProvider } from '../index';
+import { PageCacheProvider } from '../src/index';
 import ReactDOM from 'react-dom';
 
 describe('fetching', () => {

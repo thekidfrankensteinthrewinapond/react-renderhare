@@ -6,6 +6,9 @@
     }]
   ],
   "env": {
+    "cjs": {
+      "presets": [["es2015", {"modules":"commonjs"}], "react"]
+    },
     "test": {
       "presets": ["es2015", "react"]
     }
