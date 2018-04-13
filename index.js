@@ -37,6 +37,8 @@ export class PageCacheProvider extends Component {
       item: null,
       isLoading: false
     };
+
+    this.invalidate = this.invalidate.bind(this);
   }
 
   componentWillMount() {
@@ -53,6 +55,17 @@ export class PageCacheProvider extends Component {
 
     this.setState({isLoading: true});
     this.fetchAndSave();
+  }
+
+  invalidate() {
+    this.setState({isLoading: true});
+    this.fetchAndSave();
+  }
+
+  componentDidMount() {
+    if(this.props.invalidate) {
+      this.props.invalidate(this.invalidate);
+    }
   }
 
   fetchAndSave() {
